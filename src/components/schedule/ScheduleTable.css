@@ -1,0 +1,125 @@
+.schedule-table-box {
+  flex: 1;
+  min-width: 500px;
+  background: var(--box);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.schedule-table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.header-row, .row {
+  display: contents;
+}
+
+.time-cell {
+  font-weight: bold;
+  padding: 0.5rem;
+  background: var(--hover);
+  text-align: center;
+}
+
+.cell {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hex-btn {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+.cell.filled {
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.cell[class*="lecture"] { background-color: #fff4d2; }
+.cell[class*="practice"] { background-color: #d2f4ff; }
+.cell[class*="lab"] { background-color: #ffd2f0; }
+.delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+.cell.filled {
+  color: var(--text); /* автоматично буде світлий у темній темі */
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding: 0.5rem 0.3rem;
+  border-radius: 4px;
+}
+.pair-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.pair-subject {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.pair-type {
+  font-size: 0.85rem;
+  font-weight: normal;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+.copy-week-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}

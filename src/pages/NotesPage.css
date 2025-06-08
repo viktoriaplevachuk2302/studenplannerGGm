@@ -1,0 +1,51 @@
+.notes-page {
+  padding: 2rem;
+  font-family: sans-serif;
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+.notes-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.add-note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.add-note textarea {
+  resize: vertical;
+  min-height: 80px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-note button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #7a5c4d; /* коричневий */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-note button:hover {
+  background: #634d3f;
+}
+
+.notes-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}

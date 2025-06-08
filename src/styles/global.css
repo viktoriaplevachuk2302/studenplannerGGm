@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #5D4037;
+  --secondary-color: #8D6E63;
+  --light-color: #D7CCC8;
+  --text-dark: #3E2723;
+  --text-light: #EFEBE9;
+  --background-light: #EFEBE9;
+  --background-dark: #121212;
+  --surface-light: #FFFFFF;
+  --surface-dark: #1E1E1E;
+  --border-color: #A1887F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input, select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--surface-light);
+  color: var(--text-dark);
+}

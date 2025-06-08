@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  min-height: calc(100vh - 80px);
+}
+
+[data-theme="dark"] .app {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+[data-theme="dark"] .main-content {
+  background-color: var(--surface-dark);
+}
