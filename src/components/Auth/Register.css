@@ -53,3 +53,16 @@
   cursor: pointer;
   color: var(--accent);
 }
+@media (max-width: 480px) {
+  .auth-box {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: calc(100% - 2rem);
+    border-radius: 10px;
+  }
+  
+  .auth-box input,
+  .auth-box button {
+    padding: 0.5rem;
+  }
+}
