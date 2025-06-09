@@ -123,3 +123,94 @@
   font-size: 1rem;
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .schedule-table-box {
+    min-width: 400px;
+  }
+  
+  .schedule-table {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .time-cell {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .cell {
+    height: 50px;
+  }
+  
+  .pair-subject {
+    font-size: 0.9rem;
+  }
+  
+  .pair-type {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-table-box {
+    min-width: 300px;
+    padding: 0.8rem;
+  }
+  
+  .schedule-table {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+  }
+  
+  .cell {
+    height: 45px;
+  }
+  
+  .pair-subject {
+    font-size: 0.85rem;
+  }
+  
+  .copy-week-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-table-box {
+    min-width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+  }
+  
+  .schedule-table {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .time-cell {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  
+  .cell {
+    height: 40px;
+  }
+  
+  .pair-subject {
+    font-size: 0.8rem;
+  }
+  
+  .pair-type {
+    display: none;
+  }
+  
+  .delete-btn {
+    font-size: 14px;
+    top: 2px;
+    right: 4px;
+  }
+  
+  .copy-week-btn {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
